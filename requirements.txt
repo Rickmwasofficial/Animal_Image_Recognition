@@ -1,5 +1,5 @@
 absl-py
-dotenv
+python-dotenv
 altair
 annotated-types
 anyio
