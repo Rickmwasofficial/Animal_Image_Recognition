@@ -17,10 +17,7 @@ configure()
 
 # Load your model (change 'your_model.h5' to your actual model file)
 model = load_model('AIR_Aug.keras')
-try:
-    genai.configure(api_key=os.getenv('KEY'))
-except:
-    genai.configure(api_key=st.secrets["my_cool_secrets"]["things_i_like"])
+genai.configure(api_key=st.secrets["my_cool_secrets"]["things_i_like"])
 # Define the image size expected by your model
 IMG_SIZE = (224, 224)  # Update this according to your model's input size
 
