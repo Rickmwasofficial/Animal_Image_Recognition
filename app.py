@@ -3,7 +3,6 @@ import tensorflow as tf
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import numpy as np
-import numpy as np
 from PIL import Image
 import io
 import google.generativeai as genai
@@ -38,6 +37,14 @@ class_names = np.array([
     'sparrow', 'squid', 'squirrel', 'starfish', 'swan', 'tiger', 'turkey', 'turtle', 'whale',
     'wolf', 'wombat', 'woodpecker', 'zebra'
 ])
+
+# Function to capitalize the first letter of each string
+def capitalize_first_letter(strings):
+    # Vectorize the string operation
+    vectorized_capitalize = np.vectorize(lambda s: s.capitalize())
+    return vectorized_capitalize(strings)
+
+class_names = capitalize_first_letter(class_names)
 
 def preprocess_image(img):
     # Convert image to RGB
