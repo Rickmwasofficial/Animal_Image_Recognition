@@ -19,6 +19,7 @@ configure()
 model = tf.keras.models.load_model('AIR_Aug.keras')
 # Correctly access the secret
 api_key = st.secrets["my_secret"]
+
 genai.configure(api_key=api_key)
 # Define the image size expected by your model
 IMG_SIZE = (224, 224)  # Update this according to your model's input size
