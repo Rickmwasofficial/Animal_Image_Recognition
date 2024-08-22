@@ -16,7 +16,7 @@ def configure():
 configure()    
 
 # Load your model (change 'your_model.h5' to your actual model file)
-model = load_model('AIR_Aug.keras')
+model = tf.keras.models.load_model('AIR_Aug.keras')
 # Correctly access the secret
 api_key = st.secrets["my_secret"]
 genai.configure(api_key=api_key)
