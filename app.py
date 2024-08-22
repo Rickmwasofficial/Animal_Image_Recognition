@@ -7,10 +7,17 @@ import numpy as np
 from PIL import Image
 import io
 import google.generativeai as genai
-key = 'AIzaSyCieIdz_ZmVCo6egrBP02d_SDyvhHtwtmA'
+import os
+from dotenv import load_dotenv
+
+def configure():
+    load_dotenv()
+
+configure()    
+
 # Load your model (change 'your_model.h5' to your actual model file)
 model = load_model('AIR_Aug.keras')
-genai.configure(api_key=key)
+genai.configure(api_key=os.getenv('key'))
 # Define the image size expected by your model
 IMG_SIZE = (224, 224)  # Update this according to your model's input size
 
