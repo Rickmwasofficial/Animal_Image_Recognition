@@ -148,7 +148,7 @@ sympy
 tenacity
 tensorboard
 tensorboard-data-server
-tensorflow
+tensorflow-cpu
 termcolor
 terminado
 threadpoolctl
