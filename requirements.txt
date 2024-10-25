@@ -143,7 +143,7 @@ smmap
 sniffio
 soupsieve
 stack-data
-streamlit>=1.28.0
+streamlit
 protobuf==3.20.3
 sympy
 tenacity
