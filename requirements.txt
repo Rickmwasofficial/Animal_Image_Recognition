@@ -109,7 +109,7 @@ plotly
 prometheus_client
 prompt_toolkit
 proto-plus
-protobuf
+protobuf==3.20.x
 psutil
 ptyprocess
 pure_eval
