@@ -148,7 +148,8 @@ sympy
 tenacity
 tensorboard
 tensorboard-data-server
-tensorflow-cpu
+tensorflow>=2.14.0
+keras>=2.14.0
 termcolor
 terminado
 threadpoolctl
