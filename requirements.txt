@@ -1,6 +1,5 @@
 absl-py
 python-dotenv
-altair
 annotated-types
 anyio
 argon2-cffi
